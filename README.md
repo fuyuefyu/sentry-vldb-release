@@ -12,7 +12,7 @@ the commands below.
 - `packages/SENTRY_VLDB_compile_package_20260802_021120.zip` contains the
   compile-ready manuscript bundle, including `main.pdf`, LaTeX source,
   bibliography files, local class/style files, generated table source, and the
-  six paper figures.
+  six paper figures, plus the editable main-figure PPTX.
 - `packages/SENTRY_executable_validation_code_package_20260802_021120.zip`
   contains the standalone DuckDB-backed executable validation package used for
   the database/operator witness row in the certificate-disclosure table.
@@ -90,9 +90,7 @@ source provenance:
 - `provenance/summary_builders/run_optimizer_validation_artifacts.py` for
   optimizer column-generation and validation-LP summaries;
 - `provenance/summary_builders/run_db_operator_grid.py` for the DuckDB operator
-  grid;
-- `provenance/prior_nips_artifact/` for the prior recommender-audit source
-  lineage.
+  grid.
 
 MovieLens-1M, MIND-small, Amazon Reviews 2023, and KuaiRand raw corpora are not
 redistributed in this repository. The default artifact rebuild is therefore a
@@ -104,7 +102,7 @@ the provenance scripts document the heavier upstream summary-generation path.
 Before upload, the release archives were checked as follows:
 
 - `SENTRY_VLDB_artifact.zip` was unpacked and `bash run_all.sh` completed.
-- The artifact manifest check reported `expected=214 missing=0 mismatch=0`.
+- The artifact manifest check reported `expected=195 missing=0 mismatch=0`.
 - `SENTRY_VLDB_compile_package_20260802_021120.zip` was unpacked and recompiled
   to a 14-page `main.pdf`.
 - `SENTRY_executable_validation_code_package_20260802_021120.zip` was unpacked,
